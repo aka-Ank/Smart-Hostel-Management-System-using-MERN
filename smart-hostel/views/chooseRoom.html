@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Choose Room</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-page="choose-room">
+  <nav class="navbar">
+    <h1>Choose Room</h1>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a id="backToStudent" href="/student">Student Dashboard</a>
+      <a href="/login">Logout</a>
+    </div>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="card center-text">
+      <h2>Available Rooms</h2>
+      <p>Select any available room below.</p>
+      <p id="chooseRoomMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <div id="availableRoomList" class="room-grid"></div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
