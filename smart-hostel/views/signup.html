@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Hostel - Signup</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-page="signup" style="background-image: url('/data/pdpu.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;">
+  <nav class="navbar">
+    <h1>Smart Hostel</h1>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/login">Login</a>
+      <a href="/signup">Signup</a>
+    </div>
+  </nav>
+
+  <main class="page-center">
+    <section class="card form-card">
+      <h2>Signup</h2>
+      <form id="signupForm" class="form-grid">
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <select name="role" required>
+          <option value="">Select Role</option>
+          <option value="student">Student</option>
+          <option value="warden">Warden</option>
+        </select>
+        <button class="btn" type="submit">Create Account</button>
+      </form>
+      <p id="signupMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

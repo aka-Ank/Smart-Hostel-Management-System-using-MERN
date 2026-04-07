@@ -1,0 +1,20 @@
+{
+  "name": "smart-hostel",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Smart Hostel Management System using Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "hostel-management",
+    "beginner"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

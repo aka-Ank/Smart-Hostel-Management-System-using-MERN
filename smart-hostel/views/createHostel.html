@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Hostel</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-page="create-hostel">
+  <nav class="navbar">
+    <h1>Hostel Setup</h1>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/warden">Warden Dashboard</a>
+      <a href="/login">Logout</a>
+    </div>
+  </nav>
+
+  <main class="page-center">
+    <section class="card form-card">
+      <h2>Create Hostel Design</h2>
+      <form id="createHostelForm" class="form-grid">
+        <input type="number" name="floors" min="1" placeholder="Number of floors" required />
+        <input type="number" name="roomsPerFloor" min="1" placeholder="Rooms per floor" required />
+        <select name="allocationMode" required>
+          <option value="">Select Allocation Mode</option>
+          <option value="force">Force Fill</option>
+          <option value="custom">Custom Selection</option>
+        </select>
+        <button class="btn" type="submit">Create Hostel</button>
+      </form>
+      <p id="createHostelMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

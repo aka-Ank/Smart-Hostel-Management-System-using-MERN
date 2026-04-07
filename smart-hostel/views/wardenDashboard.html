@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warden Dashboard</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body data-page="warden-dashboard">
+  <nav class="navbar">
+    <h1>Warden Panel</h1>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/warden/create">Create Hostel</a>
+      <a href="/login">Logout</a>
+    </div>
+  </nav>
+
+  <main class="page-wrap">
+    <section class="card center-text">
+      <h2>Warden Dashboard</h2>
+      <p>Create hostel design and view room occupancy.</p>
+      <div class="button-row">
+        <a class="btn" href="/warden/create">Create Hostel Design</a>
+        <button class="btn secondary" id="viewRoomsBtn">View Rooms</button>
+      </div>
+      <p id="wardenMessage" class="message"></p>
+    </section>
+
+    <section class="card">
+      <h3>Room List</h3>
+      <div id="roomList" class="room-grid"></div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
